@@ -1,42 +1,49 @@
 <h1>Burger Logger</h1>
+<img class="mcd" src="assets/img/mcd.png" width="100px" height="100px">
 
-<h2>Uneaten Burgers</h2>
-
-
+<div class="box1">
+<h2>Your Order</h2>
 
 <ul>
   {{#each burgers}}
     {{#unless eaten}}
       {{!-- {{eaten=true}} --}}
       <li>
-	<img src="assets/img/burger.jpg" width="100px" height="100px">{{name}}
+	{{name}}
+  <br>
+  <img src="assets/img/burger.jpg" width="100px" height="100px">
 
 	<button class="change-eat" data-id="{{id}}" data-neweat="{{eaten}}">
-		{{#if eaten}}Enjoy{{else}}Eat{{/if}}
+		{{#if eaten}}Put back{{else}}Devour it!{{/if}}
 	</button>
 </li>
     {{/unless}}
   {{/each}}
 </ul>
+</div>
 
-<h2>Eaten Burgers</h2>
+<div class="box2">
+<h2>Burgers you ate</h2>
 
 <ul>
   {{#each burgers}}
     {{#if eaten}}
       {{!-- {{eaten=false}} --}}
       <li>
-	<img src="assets/img/burger.jpg" width="100px" height="100px">{{name}}
-
+	{{name}}
+  <br>
+<img src="assets/img/burger.jpg" width="100px" height="100px">
 	<button class="change-eat" data-id="{{id}}" data-neweat="{{eaten}}">
-		{{#if eaten}}Enjoy{{else}}Eat{{/if}}
+		{{#if eaten}}Put back{{else}}Devour it!{{/if}}
 	</button>
 </li>
     {{/if}}
   {{/each}}
 </ul>
+</div>
 
-<h2>Add a Burger</h2>
+<div class="box3">
+<h2>Order a Burger</h2>
 <form class="create-form">
 
   <div class="form-group">
@@ -46,12 +53,14 @@
 
   <div class="form-group">
     <label for="slee">Eaten?</label><br>
-    <input type="radio" name="eaten" value="1" checked> Eaten!<br>
-    <input type="radio" name="eaten" value="0"> Uneatend
+    <input type="radio" name="eaten" value="1"> Eaten!<br>
+    <input type="radio" name="eaten" value="0" checked> Uneatend
   </div>
 
-  <button type="submit">Add Burger</button>
+  <button class="submitb" type="submit">Order</button>
 </form>
+</div>
+
 
 <script>
   $(function() {

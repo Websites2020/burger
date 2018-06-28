@@ -1,0 +1,63 @@
+.box1 {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    border-style: dotted;
+    border-color: yellow;
+    border-width: 5px;
+    padding: 5px;
+    color: yellow;
+}
+
+.box2 {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    border-style: dotted;
+    border-color: yellow;
+    border-width: 5px;
+    padding: 5px;
+    color: yellow;
+}
+
+.box3 {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    border-style: dotted;
+    border-color: yellow;
+    border-width: 5px;
+    padding: 5px;
+    color: yellow;
+}
+
+.submitb {
+    padding: 7px;
+    color: yellow;
+    background: black;
+}
+
+.change-eat {
+    padding: 7px;
+    color: yellow;
+    background: black;
+}
+
+.mcd {
+    position: absolute;
+    top: 2%;
+    left: 1%;
+}
+
+h1 {
+    position: absolute;
+    top: 0%;
+    left: 10%;
+    color: yellow;
+    font-size: 50px;
+}
+
+body {
+    background: red;
+}
+
